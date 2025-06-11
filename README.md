@@ -12,3 +12,5 @@
 - Avatar: facexlib, VToonify, Wav2Lip, SadTalker, Coqui TTS
 - РҐСЂР°РЅРёР»РёС‰Рµ: Yandex S3
 - РњРѕРЅРёС‚РѕСЂРёРЅРі: Prometheus
+=======
+# EGE-virtual-assistant
