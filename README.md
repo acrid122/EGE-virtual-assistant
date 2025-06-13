@@ -1,16 +1,20 @@
-﻿# EGE-Assistant
-Р’РёСЂС‚СѓР°Р»СЊРЅС‹Р№ РїРѕРјРѕС‰РЅРёРє РґР»СЏ РїРѕРґРіРѕС‚РѕРІРєРё Рє Р•Р“Р­ РїРѕ РёРЅС„РѕСЂРјР°С‚РёРєРµ.
+﻿# EGE Virtual Assistant
+Виртуальный помощник для подготовки к ЕГЭ по информатике.
 
-## РЈСЃС‚Р°РЅРѕРІРєР°
-1. РЈСЃС‚Р°РЅРѕРІРёС‚Рµ Docker Рё Docker Compose.
-2. РЎРєР»РѕРЅРёСЂСѓР№С‚Рµ СЂРµРїРѕР·РёС‚РѕСЂРёР№: git clone https://github.com/yourusername/EGE-Assistant.git
-3. Р—Р°РїСѓСЃС‚РёС‚Рµ: docker-compose up
+## Установка
+1. Установите Docker и Docker Compose.
+2. Склонируйте репозиторий: `git clone https://github.com/acrid122/EGE-virtual-assistant.git`
+3. Создайте `.env` на основе `.env.example`.
+4. Запустите: `docker-compose up --build`
 
-## РЎС‚РµРє
+## Тестирование
+- БД: `pytest backend/tests/test_db.py`
+- Redis: `pytest backend/tests/test_redis.py`
+- Celery: `pytest worker/tests/test_celery.py`
+
+## Стек
 - Frontend: React (Telegram Web App)
 - Backend: Flask, Postgres, Redis, Celery
 - Avatar: facexlib, VToonify, Wav2Lip, SadTalker, Coqui TTS
-- РҐСЂР°РЅРёР»РёС‰Рµ: Yandex S3
-- РњРѕРЅРёС‚РѕСЂРёРЅРі: Prometheus
-=======
-# EGE-virtual-assistant
+- Хранилище: Yandex S3
+- Мониторинг: Prometheus

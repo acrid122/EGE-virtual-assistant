@@ -1,0 +1,15 @@
+version: "2"
+authtoken: 2uVLMf7sDFatT2gd6i8CzaXZBxL_4NinfxJsGTq9EPqyHEyy8 # Вставь токен ngrok
+tunnels:
+  frontend:
+    proto: http
+    addr: 3001
+  backend:
+    proto: http
+    addr: 5001
+  worker:
+    proto: http
+    addr: 5556
+  avatar:
+    proto: http
+    addr: 5002
